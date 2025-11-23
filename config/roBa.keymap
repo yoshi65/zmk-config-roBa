@@ -80,13 +80,13 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W         &kp E         &kp R         &kp T                                                                      &kp Y        &kp U  &kp I      &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S         &kp D         &kp F         &kp G             &mkp MB1                                  &kp MINUS      &lt 5 H      &kp J  &kp K      &kp L    &mt LG(RIGHT_CONTROL) SEMICOLON
-&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V         &kp B             &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT      &kp GLOBE      &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&lt 1 TAB           &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_to_layer_0 2 SPACE                    &kp BACKSPACE  &lt 2 ENTER                             &lt 3 ESC
+&kp Q               &kp W         &kp E         &kp R         &kp T                                                 &kp Y        &kp U  &kp I      &kp O    &kp P
+&mt LEFT_CONTROL A  &kp S         &kp D         &kp F         &kp G             &mkp MB1         &kp LEFT_BRACKET   &lt 5 H      &kp J  &kp K      &kp L    &mt LG(RIGHT_CONTROL) SEMICOLON
+&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V         &kp B             &kp TAB          &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&lt 1 TAB           &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 2 SPACE      &kp BACKSPACE      &lt 2 ENTER                             &lt 3 ESC
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         FUNCTION {
@@ -100,10 +100,10 @@
 
         NUM {
             bindings = <
-&kp ESC                     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp CARET       &kp AMPERSAND   &kp MINUS     &kp EQUAL  &kp GRAVE
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &mkp MB1        &mkp MB1        &mkp MB2      &mkp MB3   &kp SINGLE_QUOTE
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp BACKSLASH
-&trans                      &kp KP_NUMBER_0  &trans           &trans           &trans        &trans                       &trans          &trans                                                   &kp PIPE
+&kp ESC                     &kp N7        &kp N8        &kp N9        &kp PLUS                                     &kp CARET       &kp AMPERSAND   &kp MINUS     &kp EQUAL  &kp GRAVE
+&kp SLASH                   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK  &mkp MB1       &kp UNDERSCORE  &mkp MB1        &mkp MB1        &mkp MB2      &mkp MB3   &kp SINGLE_QUOTE
+&mt LEFT_SHIFT KP_NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp EQUAL      &trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp BACKSLASH
+&trans                      &kp NUMBER_0  &trans        &trans        &trans        &trans         &trans          &trans                                                   &kp PIPE
             >;
         };
 
@@ -120,10 +120,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans    &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB1  &mkp MB1  &mkp MB2  &mkp MB3  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };
 
